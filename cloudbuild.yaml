@@ -1,7 +1,7 @@
 steps:
 # Build the container image
 - name: 'gcr.io/cloud-builders/docker'
-  args: ['build', '-t', 'gcr.io/glossy-odyssey-397419/weatherapp:$COMMIT_SHA', 'My_Weather_Webapp/Dockerfile']
+  args: ['build', '-t', 'gcr.io/glossy-odyssey-397419/weatherapp:$COMMIT_SHA', 'My_Weather_Webapp/']
 # Push the container image to Container Registry
 - name: 'gcr.io/cloud-builders/docker'
   args: ['push', 'gcr.io/glossy-odyssey-397419/weatherapp:$COMMIT_SHA']
