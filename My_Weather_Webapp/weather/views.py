@@ -4,7 +4,7 @@ from .models import City
 from .forms import CityForm
 # Create your views here.
 def index(request):
-    url = 'should_be_unique_for_you'
+    url = 'https://weather-app-5u2m7k43vq-uc.a.run.app'
     err_msg = ''
     message = ''
     message_class = ''
